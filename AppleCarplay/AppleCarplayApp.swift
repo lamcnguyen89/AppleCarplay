@@ -7,7 +7,8 @@ struct AppleCarplayApp: App {
   
   var body: some Scene {
     WindowGroup {
-      ContentView(places: MapDirectory().places)
+       // ContentView(places: MapDirectory().places)
+        LocationView()
     }
   }
 }
