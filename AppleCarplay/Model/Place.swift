@@ -3,7 +3,7 @@
 import Foundation
 import MapKit
 
-final class Place: Decodable {
+final class Place: Decodable, Identifiable {
     let name: String
     let image: String
     let sponsored: Bool
@@ -12,6 +12,7 @@ final class Place: Decodable {
     let location: CLLocation
     private let regionRadius: CLLocationDistance = 1000
     let region: MKCoordinateRegion
+    let id = UUID()
     
     init(from decoder: Decoder) throws {
         

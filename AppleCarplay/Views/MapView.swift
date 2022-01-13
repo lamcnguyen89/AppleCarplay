@@ -4,16 +4,32 @@ import SwiftUI
 import MapKit
 
 struct MapView: View {
+    
+    let location: Place
+    
     @State private var region: MKCoordinateRegion
     @Environment(\.presentationMode) private var presentationMode
     
     init(location: Place) {
+        self.location = location
         _region = State(initialValue: location.region)
     }
     
     var body: some View {
         ZStack {
-            Map(coordinateRegion: $region)
+            Map(coordinateRegion: $region, annotationItems: [location]) {
+                    item in
+                //MapMarker(coordinate: item.location.coordinate, tint: Color.red)
+                //MapPin(coordinate: item.location.coordinate, tint: Color.red)
+                MapAnnotation(coordinate: item.location.coordinate) {
+                    VStack {
+                        Circle()
+                            .fill(Color.red)
+                        Text(item.name)
+                            .bold()
+                    }
+                }
+            }
             VStack {
                 HStack {
                     Button {
