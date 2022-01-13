@@ -20,7 +20,8 @@ struct MapView: View {
 
     var body: some View {
         ZStack {
-            MapViewUI(location: location, mapViewType: mapType)
+            MapViewUI(location: location, places: places,  mapViewType: mapType)
+            
 //            Map(coordinateRegion: $region, annotationItems: places) {
 //                    item in
 //                //MapMarker(coordinate: item.location.coordinate, tint: Color.red)

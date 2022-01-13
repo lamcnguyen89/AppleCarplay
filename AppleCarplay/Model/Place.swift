@@ -3,7 +3,7 @@
 import Foundation
 import MapKit
 
-final class Place: Decodable, Identifiable {
+final class Place: NSObject, Decodable, Identifiable {
     let name: String
     let image: String
     let sponsored: Bool
@@ -39,4 +39,9 @@ final class Place: Decodable, Identifiable {
         
     }
     
+}
+
+extension Place: MKAnnotation {
+    var coordinate: CLLocationCoordinate2D {location.coordinate}
+    var title: String? { name }
 }
