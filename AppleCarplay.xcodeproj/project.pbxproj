@@ -20,6 +20,7 @@
 		DE342D03278FBECF003DBB52 /* MapViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE342D02278FBECF003DBB52 /* MapViewUI.swift */; };
 		DE342D0527901256003DBB52 /* LocationQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE342D0427901256003DBB52 /* LocationQuery.swift */; };
 		DE342D072790154E003DBB52 /* MapSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE342D062790154E003DBB52 /* MapSearchView.swift */; };
+		DE342D09279083E4003DBB52 /* SnapShotter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE342D08279083E4003DBB52 /* SnapShotter.swift */; };
 		DE3D6455278F728C0078111A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D6454278F728C0078111A /* MapView.swift */; };
 		DE3D6457278F79D60078111A /* places.json in Resources */ = {isa = PBXBuildFile; fileRef = DE3D6456278F79D60078111A /* places.json */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		DE342D02278FBECF003DBB52 /* MapViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewUI.swift; sourceTree = "<group>"; };
 		DE342D0427901256003DBB52 /* LocationQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationQuery.swift; sourceTree = "<group>"; };
 		DE342D062790154E003DBB52 /* MapSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSearchView.swift; sourceTree = "<group>"; };
+		DE342D08279083E4003DBB52 /* SnapShotter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapShotter.swift; sourceTree = "<group>"; };
 		DE3D6454278F728C0078111A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		DE3D6456278F79D60078111A /* places.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = places.json; path = "AppleCarplay/Preview Content/places.json"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -99,6 +101,7 @@
 				D3E10F7624D36559008CE7C5 /* Place.swift */,
 				D320786824D4B5620017857E /* MapDirectory.swift */,
 				DE342D0427901256003DBB52 /* LocationQuery.swift */,
+				DE342D08279083E4003DBB52 /* SnapShotter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				D34D9EB124E086070007876E /* DetailView.swift in Sources */,
 				49CAD41E24E5A23C001B01B7 /* RoadView.swift in Sources */,
 				DE342D072790154E003DBB52 /* MapSearchView.swift in Sources */,
+				DE342D09279083E4003DBB52 /* SnapShotter.swift in Sources */,
 				DE342D0527901256003DBB52 /* LocationQuery.swift in Sources */,
 				D3500EE824D2007D002922AB /* ContentView.swift in Sources */,
 				D3500EE624D2007D002922AB /* AppleCarplayApp.swift in Sources */,
