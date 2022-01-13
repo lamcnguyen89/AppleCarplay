@@ -16,6 +16,10 @@ struct MapViewUI: UIViewRepresentable {
         mapView.isRotateEnabled = false
         mapView.addAnnotations(places)
         mapView.delegate = context.coordinator
+        // Lines below allow you to only show restaurants, atms and hotels on the map
+        let categories: [MKPointOfInterestCategory] = [.restaurant, .atm, .hotel] // Define categories you want to show
+        let filter = MKPointOfInterestFilter(including: categories) // Create Filter for the selected categories
+        mapView.pointOfInterestFilter = filter // Apply filter to the MapView
         return mapView
     }
     
