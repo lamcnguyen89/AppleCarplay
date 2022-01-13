@@ -5,6 +5,7 @@ import CoreLocation
 
 final class LocationManager: NSObject, ObservableObject {
     var locationManager = CLLocationManager()
+    var previousLocation: CLLocation?
     
     @Published var locationString = ""
     
@@ -12,6 +13,7 @@ final class LocationManager: NSObject, ObservableObject {
         super.init()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.allowsBackgroundLocationUpdates = true
         
     }
     
@@ -34,7 +36,15 @@ extension LocationManager: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let latest = locations.first else { return }
-        locationString = "location: \(latest.description)"
+        if previousLocation != nil {
+            previousLocation = latest
+        } else {
+            let distanceInMeters = previousLocation?.distance(from: latest) ?? 0
+            previousLocation = latest
+            locationString = "You are \(Int(distanceInMeters)) meters from your start point"
+        }
+        print(latest)
+        //locationString = "location: \(latest.description)"
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
