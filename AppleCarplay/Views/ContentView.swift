@@ -66,7 +66,7 @@ private struct LocationOptionsView: View {
   
   var body: some View {
     VStack(spacing: 10) {
-        NavigationLink(destination: MapView(location: place)) {
+        NavigationLink(destination: MapView(location: place, places: places)) {
           Label(
             title: { Text("Find on Map")
               .foregroundColor(.white)

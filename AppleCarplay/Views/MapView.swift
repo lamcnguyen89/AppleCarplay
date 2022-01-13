@@ -4,20 +4,22 @@ import SwiftUI
 import MapKit
 
 struct MapView: View {
-    
+
     let location: Place
-    
+    let places: [Place]
+
     @State private var region: MKCoordinateRegion
     @Environment(\.presentationMode) private var presentationMode
-    
-    init(location: Place) {
+
+    init(location: Place, places: [Place]) {
         self.location = location
         _region = State(initialValue: location.region)
+        self.places = places
     }
-    
+
     var body: some View {
         ZStack {
-            Map(coordinateRegion: $region, annotationItems: [location]) {
+            Map(coordinateRegion: $region, annotationItems: places) {
                     item in
                 //MapMarker(coordinate: item.location.coordinate, tint: Color.red)
                 //MapPin(coordinate: item.location.coordinate, tint: Color.red)
@@ -51,6 +53,9 @@ struct MapView: View {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView(location: MapDirectory().places[0])
+        MapView(location: MapDirectory().places[0], places: MapDirectory().places)
     }
 }
+
+
+
