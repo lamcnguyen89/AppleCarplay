@@ -9,6 +9,7 @@ struct MapView: View {
     let places: [Place]
 
     @State private var region: MKCoordinateRegion
+    @State private var mapType: MKMapType = .standard
     @Environment(\.presentationMode) private var presentationMode
 
     init(location: Place, places: [Place]) {
@@ -19,19 +20,20 @@ struct MapView: View {
 
     var body: some View {
         ZStack {
-            Map(coordinateRegion: $region, annotationItems: places) {
-                    item in
-                //MapMarker(coordinate: item.location.coordinate, tint: Color.red)
-                //MapPin(coordinate: item.location.coordinate, tint: Color.red)
-                MapAnnotation(coordinate: item.location.coordinate) {
-                    VStack {
-                        Circle()
-                            .fill(Color.red)
-                        Text(item.name)
-                            .bold()
-                    }
-                }
-            }
+            MapViewUI(location: location, mapViewType: mapType)
+//            Map(coordinateRegion: $region, annotationItems: places) {
+//                    item in
+//                //MapMarker(coordinate: item.location.coordinate, tint: Color.red)
+//                //MapPin(coordinate: item.location.coordinate, tint: Color.red)
+//                MapAnnotation(coordinate: item.location.coordinate) {
+//                    VStack {
+//                        Circle()
+//                            .fill(Color.red)
+//                        Text(item.name)
+//                            .bold()
+//                    }
+//                }
+//            }
             VStack {
                 HStack {
                     Button {
@@ -44,6 +46,14 @@ struct MapView: View {
                 }
                 .padding()
                 Spacer()
+                Picker("", selection: $mapType) {
+                    Text("Standard").tag(MKMapType.standard)
+                    Text("Hybrid").tag(MKMapType.hybrid)
+                    Text("Satellite").tag(MKMapType.satellite)
+                    
+                }
+                .pickerStyle(SegmentedPickerStyle())
+                .offset(y: -28)
             }
         }
         .edgesIgnoringSafeArea(.all)

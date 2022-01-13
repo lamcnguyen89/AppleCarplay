@@ -17,6 +17,7 @@
 		D3500EED24D2007E002922AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3500EEC24D2007E002922AB /* Preview Assets.xcassets */; };
 		D3506E9124F80DAB00EA23B1 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3506E9024F80DAB00EA23B1 /* TitleView.swift */; };
 		D3E10F7724D36559008CE7C5 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E10F7624D36559008CE7C5 /* Place.swift */; };
+		DE342D03278FBECF003DBB52 /* MapViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE342D02278FBECF003DBB52 /* MapViewUI.swift */; };
 		DE3D6455278F728C0078111A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D6454278F728C0078111A /* MapView.swift */; };
 		DE3D6457278F79D60078111A /* places.json in Resources */ = {isa = PBXBuildFile; fileRef = DE3D6456278F79D60078111A /* places.json */; };
 /* End PBXBuildFile section */
@@ -34,6 +35,7 @@
 		D3500EEE24D2007E002922AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3506E9024F80DAB00EA23B1 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		D3E10F7624D36559008CE7C5 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		DE342D02278FBECF003DBB52 /* MapViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewUI.swift; sourceTree = "<group>"; };
 		DE3D6454278F728C0078111A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		DE3D6456278F79D60078111A /* places.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = places.json; path = "AppleCarplay/Preview Content/places.json"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -105,6 +107,7 @@
 				49CAD41D24E5A23C001B01B7 /* RoadView.swift */,
 				D3506E9024F80DAB00EA23B1 /* TitleView.swift */,
 				DE3D6454278F728C0078111A /* MapView.swift */,
+				DE342D02278FBECF003DBB52 /* MapViewUI.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				D3500EE624D2007D002922AB /* AppleCarplayApp.swift in Sources */,
 				DE3D6455278F728C0078111A /* MapView.swift in Sources */,
 				D3506E9124F80DAB00EA23B1 /* TitleView.swift in Sources */,
+				DE342D03278FBECF003DBB52 /* MapViewUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
