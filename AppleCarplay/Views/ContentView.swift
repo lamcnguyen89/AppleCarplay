@@ -5,6 +5,7 @@ import SwiftUI
 struct ContentView: View {
   let places: [Place]
   @State private var selectedPlace: Place
+    @StateObject private var locationManager = LocationManager()
 
   init(places: [Place]) {
     self.places = places
@@ -13,12 +14,19 @@ struct ContentView: View {
   
   var body: some View {
     NavigationView {
-      PlacesView(places: places, selectedPlace: $selectedPlace)
+      PlacesView(places: places, selectedPlace: $selectedPlace, locationManager: locationManager)
         .background(RoadView())
       .navigationBarHidden(true)
       
       Text("\(Image(systemName: "arrow.left")) Choose an Interesting Place!")
         .font(.largeTitle)
+    }
+    .onAppear {
+        locationManager.fetchAddress(for: selectedPlace)
+        locationManager.setupMonitoring(for: places)
+    }
+    .alert(isPresented: $locationManager.inRegion){
+        Alert(title: Text("You are near \(locationManager.regionName). Check it out!"))
     }
   }
 }
@@ -35,6 +43,7 @@ struct ContentView_Previews: PreviewProvider {
 private struct PlacesView: View {
   let places: [Place]
   @Binding var selectedPlace: Place
+    @ObservedObject var locationManager: LocationManager
   
   var body: some View {
     VStack {
@@ -47,14 +56,14 @@ private struct PlacesView: View {
         .padding([.top, .horizontal])
       Spacer()
       VStack(spacing: 16) {
-        Text("Address Goes Here")
+          Text(locationManager.currentAddress)
           .foregroundColor(.white)
           .font(.title3)
           .bold()
         LocationOptionsView(place: selectedPlace, places: places)
       }
       Spacer()
-      OtherPlacesScrollView(selectedPlace: $selectedPlace, places: places)
+      OtherPlacesScrollView(selectedPlace: $selectedPlace, locationManager: locationManager, places: places)
         .padding(.vertical)
     }
   }
@@ -95,7 +104,12 @@ private struct LocationOptionsView: View {
 }
 
 private struct OtherPlacesScrollView: View {
-  @Binding var selectedPlace: Place
+    @Binding var selectedPlace: Place {
+        didSet {
+            locationManager.fetchAddress(for: selectedPlace)
+        }
+    }
+  @ObservedObject var locationManager: LocationManager
   let places: [Place]
   
   var body: some View {
