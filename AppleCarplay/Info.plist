@@ -24,6 +24,31 @@
 	<string>We will use your location to give you the distance and directions to interesting places</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleExternalDisplay</key>
+			<array>
+				<dict>
+					<key>UISceneClassName</key>
+					<string>CPTemplateApplicationScene</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).CarplaySceneDelegate</string>
+					<key>UISceneConfigurationName</key>
+					<string>CarPlay</string>
+				</dict>
+			</array>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneClassName</key>
+					<string>UIWindowScene</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).PhoneSceneDelegate</string>
+					<key>UISceneConfigurationName</key>
+					<string>Phone</string>
+				</dict>
+			</array>
+		</dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
 		<true/>
 	</dict>
