@@ -11,7 +11,6 @@
 		49CAD42424E5A3EA001B01B7 /* LocationPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CAD42324E5A3EA001B01B7 /* LocationPhoto.swift */; };
 		D320786924D4B5620017857E /* MapDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D320786824D4B5620017857E /* MapDirectory.swift */; };
 		D34D9EB124E086070007876E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34D9EB024E086070007876E /* DetailView.swift */; };
-		D3500EE624D2007D002922AB /* AppleCarplayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3500EE524D2007D002922AB /* AppleCarplayApp.swift */; };
 		D3500EE824D2007D002922AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3500EE724D2007D002922AB /* ContentView.swift */; };
 		D3500EEA24D2007E002922AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3500EE924D2007E002922AB /* Assets.xcassets */; };
 		D3500EED24D2007E002922AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3500EEC24D2007E002922AB /* Preview Assets.xcassets */; };
@@ -39,7 +38,6 @@
 		D320786824D4B5620017857E /* MapDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDirectory.swift; sourceTree = "<group>"; };
 		D34D9EB024E086070007876E /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		D3500EE224D2007D002922AB /* AppleCarplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleCarplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D3500EE524D2007D002922AB /* AppleCarplayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleCarplayApp.swift; sourceTree = "<group>"; };
 		D3500EE724D2007D002922AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D3500EE924D2007E002922AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3500EEC24D2007E002922AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -97,7 +95,6 @@
 			children = (
 				D3F3054B24DF043E00E2BA86 /* Views */,
 				D3E10F7324D33384008CE7C5 /* Model */,
-				D3500EE524D2007D002922AB /* AppleCarplayApp.swift */,
 				DEEB9AF4279364B800A4445E /* AppleCarplayTesting.Entitlements */,
 				DEEB9AF62793683100A4445E /* PhoneSceneDelegate.swift */,
 				DEEB9AF827936A0000A4445E /* AppDelegate.swift */,
@@ -238,7 +235,6 @@
 				DE342D0D2790AEBB003DBB52 /* LocationView.swift in Sources */,
 				DE342D0527901256003DBB52 /* LocationQuery.swift in Sources */,
 				D3500EE824D2007D002922AB /* ContentView.swift in Sources */,
-				D3500EE624D2007D002922AB /* AppleCarplayApp.swift in Sources */,
 				DE342D0B279098A2003DBB52 /* LocationManager.swift in Sources */,
 				DE3D6455278F728C0078111A /* MapView.swift in Sources */,
 				D3506E9124F80DAB00EA23B1 /* TitleView.swift in Sources */,
