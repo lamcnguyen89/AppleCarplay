@@ -1,0 +1,33 @@
+{
+  "images" : [
+    {
+      "filename" : "gridBeaches.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "gridBeaches@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "gridBeaches@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    },
+    {
+      "filename" : "gridBeaches@2x-1.png",
+      "idiom" : "car",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "gridBeaches@3x-1.png",
+      "idiom" : "car",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

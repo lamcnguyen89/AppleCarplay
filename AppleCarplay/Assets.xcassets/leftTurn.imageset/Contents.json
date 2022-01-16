@@ -1,0 +1,33 @@
+{
+  "images" : [
+    {
+      "filename" : "leftTurn.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "leftTurn@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "leftTurn@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    },
+    {
+      "filename" : "leftTurn@2x-1.png",
+      "idiom" : "car",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "leftTurn@3x-1.png",
+      "idiom" : "car",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

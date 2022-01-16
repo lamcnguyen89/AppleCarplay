@@ -28,8 +28,12 @@
 		DEEB9AF72793683100A4445E /* PhoneSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB9AF62793683100A4445E /* PhoneSceneDelegate.swift */; };
 		DEEB9AF927936A0000A4445E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB9AF827936A0000A4445E /* AppDelegate.swift */; };
 		DEEB9AFB27936A7900A4445E /* CarPlaySceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB9AFA27936A7900A4445E /* CarPlaySceneDelegate.swift */; };
-		DEEB9AFD27936D2D00A4445E /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB9AFC27936D2D00A4445E /* TestView.swift */; };
 		DEEB9B0227939B6600A4445E /* CarPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEB9B0127939B6600A4445E /* CarPlay.framework */; };
+		DEEB9B0B2794B3E300A4445E /* TemplateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB9B0A2794B3E300A4445E /* TemplateManager.swift */; };
+		DEEB9B0D2794B42A00A4445E /* TemplateManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB9B0C2794B42A00A4445E /* TemplateManager+Extensions.swift */; };
+		DEEB9B0F2794B45B00A4445E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB9B0E2794B45B00A4445E /* MapViewController.swift */; };
+		DEEB9B132794B67700A4445E /* MapScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB9B122794B67700A4445E /* MapScrollView.swift */; };
+		DEEB9B152794B8C900A4445E /* CoastalTemplates.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB9B142794B8C900A4445E /* CoastalTemplates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,8 +61,12 @@
 		DEEB9AF62793683100A4445E /* PhoneSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneSceneDelegate.swift; sourceTree = "<group>"; };
 		DEEB9AF827936A0000A4445E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEEB9AFA27936A7900A4445E /* CarPlaySceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlaySceneDelegate.swift; sourceTree = "<group>"; };
-		DEEB9AFC27936D2D00A4445E /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		DEEB9B0127939B6600A4445E /* CarPlay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CarPlay.framework; path = System/Library/Frameworks/CarPlay.framework; sourceTree = SDKROOT; };
+		DEEB9B0A2794B3E300A4445E /* TemplateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateManager.swift; sourceTree = "<group>"; };
+		DEEB9B0C2794B42A00A4445E /* TemplateManager+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TemplateManager+Extensions.swift"; sourceTree = "<group>"; };
+		DEEB9B0E2794B45B00A4445E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		DEEB9B122794B67700A4445E /* MapScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScrollView.swift; sourceTree = "<group>"; };
+		DEEB9B142794B8C900A4445E /* CoastalTemplates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoastalTemplates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,15 +101,12 @@
 		D3500EE424D2007D002922AB /* AppleCarplay */ = {
 			isa = PBXGroup;
 			children = (
+				DEEB9B092794B14300A4445E /* Supporting Files */,
+				DEEB9B082794B12F00A4445E /* App Lifecycle */,
 				D3F3054B24DF043E00E2BA86 /* Views */,
 				D3E10F7324D33384008CE7C5 /* Model */,
-				DEEB9AF4279364B800A4445E /* AppleCarplayTesting.Entitlements */,
-				DEEB9AF62793683100A4445E /* PhoneSceneDelegate.swift */,
-				DEEB9AF827936A0000A4445E /* AppDelegate.swift */,
-				DEEB9AFA27936A7900A4445E /* CarPlaySceneDelegate.swift */,
+				DEEB9B072794B0FD00A4445E /* Controllers */,
 				D3500EE924D2007E002922AB /* Assets.xcassets */,
-				D3500EEE24D2007E002922AB /* Info.plist */,
-				DE342D0E2790FA28003DBB52 /* BasketLoop.gpx */,
 				D3500EEB24D2007E002922AB /* Preview Content */,
 			);
 			path = AppleCarplay;
@@ -131,16 +136,8 @@
 		D3F3054B24DF043E00E2BA86 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D3500EE724D2007D002922AB /* ContentView.swift */,
-				49CAD42324E5A3EA001B01B7 /* LocationPhoto.swift */,
-				D34D9EB024E086070007876E /* DetailView.swift */,
-				49CAD41D24E5A23C001B01B7 /* RoadView.swift */,
-				D3506E9024F80DAB00EA23B1 /* TitleView.swift */,
-				DE3D6454278F728C0078111A /* MapView.swift */,
-				DE342D02278FBECF003DBB52 /* MapViewUI.swift */,
-				DE342D062790154E003DBB52 /* MapSearchView.swift */,
-				DE342D0C2790AEBB003DBB52 /* LocationView.swift */,
-				DEEB9AFC27936D2D00A4445E /* TestView.swift */,
+				DEEB9B112794B4C300A4445E /* CarplayViews */,
+				DEEB9B102794B4A300A4445E /* PhoneViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -151,6 +148,61 @@
 				DEEB9B0127939B6600A4445E /* CarPlay.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEEB9B072794B0FD00A4445E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DEEB9B0A2794B3E300A4445E /* TemplateManager.swift */,
+				DEEB9B0C2794B42A00A4445E /* TemplateManager+Extensions.swift */,
+				DEEB9B0E2794B45B00A4445E /* MapViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DEEB9B082794B12F00A4445E /* App Lifecycle */ = {
+			isa = PBXGroup;
+			children = (
+				DEEB9AF827936A0000A4445E /* AppDelegate.swift */,
+				DEEB9AF62793683100A4445E /* PhoneSceneDelegate.swift */,
+				DEEB9AFA27936A7900A4445E /* CarPlaySceneDelegate.swift */,
+			);
+			path = "App Lifecycle";
+			sourceTree = "<group>";
+		};
+		DEEB9B092794B14300A4445E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3500EEE24D2007E002922AB /* Info.plist */,
+				DEEB9AF4279364B800A4445E /* AppleCarplayTesting.Entitlements */,
+				DE342D0E2790FA28003DBB52 /* BasketLoop.gpx */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DEEB9B102794B4A300A4445E /* PhoneViews */ = {
+			isa = PBXGroup;
+			children = (
+				D3500EE724D2007D002922AB /* ContentView.swift */,
+				49CAD42324E5A3EA001B01B7 /* LocationPhoto.swift */,
+				D34D9EB024E086070007876E /* DetailView.swift */,
+				49CAD41D24E5A23C001B01B7 /* RoadView.swift */,
+				D3506E9024F80DAB00EA23B1 /* TitleView.swift */,
+				DE3D6454278F728C0078111A /* MapView.swift */,
+				DE342D02278FBECF003DBB52 /* MapViewUI.swift */,
+				DE342D0C2790AEBB003DBB52 /* LocationView.swift */,
+				DE342D062790154E003DBB52 /* MapSearchView.swift */,
+			);
+			path = PhoneViews;
+			sourceTree = "<group>";
+		};
+		DEEB9B112794B4C300A4445E /* CarplayViews */ = {
+			isa = PBXGroup;
+			children = (
+				DEEB9B122794B67700A4445E /* MapScrollView.swift */,
+				DEEB9B142794B8C900A4445E /* CoastalTemplates.swift */,
+			);
+			path = CarplayViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,19 +280,23 @@
 				49CAD42424E5A3EA001B01B7 /* LocationPhoto.swift in Sources */,
 				D3E10F7724D36559008CE7C5 /* Place.swift in Sources */,
 				D34D9EB124E086070007876E /* DetailView.swift in Sources */,
+				DEEB9B0D2794B42A00A4445E /* TemplateManager+Extensions.swift in Sources */,
 				49CAD41E24E5A23C001B01B7 /* RoadView.swift in Sources */,
 				DE342D072790154E003DBB52 /* MapSearchView.swift in Sources */,
 				DEEB9AF72793683100A4445E /* PhoneSceneDelegate.swift in Sources */,
 				DE342D09279083E4003DBB52 /* SnapShotter.swift in Sources */,
 				DE342D0D2790AEBB003DBB52 /* LocationView.swift in Sources */,
+				DEEB9B0F2794B45B00A4445E /* MapViewController.swift in Sources */,
 				DE342D0527901256003DBB52 /* LocationQuery.swift in Sources */,
 				D3500EE824D2007D002922AB /* ContentView.swift in Sources */,
 				DE342D0B279098A2003DBB52 /* LocationManager.swift in Sources */,
 				DE3D6455278F728C0078111A /* MapView.swift in Sources */,
+				DEEB9B152794B8C900A4445E /* CoastalTemplates.swift in Sources */,
 				D3506E9124F80DAB00EA23B1 /* TitleView.swift in Sources */,
-				DEEB9AFD27936D2D00A4445E /* TestView.swift in Sources */,
+				DEEB9B0B2794B3E300A4445E /* TemplateManager.swift in Sources */,
 				DEEB9AF927936A0000A4445E /* AppDelegate.swift in Sources */,
 				DEEB9AFB27936A7900A4445E /* CarPlaySceneDelegate.swift in Sources */,
+				DEEB9B132794B67700A4445E /* MapScrollView.swift in Sources */,
 				DE342D03278FBECF003DBB52 /* MapViewUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,12 +425,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = AppleCarplay/AppleCarplayTesting.Entitlements;
+				CODE_SIGN_ENTITLEMENTS = "AppleCarplay/Supporting Files/AppleCarplayTesting.Entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"AppleCarplay/Preview Content\"";
 				DEVELOPMENT_TEAM = 5UXWG8JHUY;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = AppleCarplay/Info.plist;
+				INFOPLIST_FILE = "AppleCarplay/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -392,12 +448,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = AppleCarplay/AppleCarplayTesting.Entitlements;
+				CODE_SIGN_ENTITLEMENTS = "AppleCarplay/Supporting Files/AppleCarplayTesting.Entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"AppleCarplay/Preview Content\"";
 				DEVELOPMENT_TEAM = 5UXWG8JHUY;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = AppleCarplay/Info.plist;
+				INFOPLIST_FILE = "AppleCarplay/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

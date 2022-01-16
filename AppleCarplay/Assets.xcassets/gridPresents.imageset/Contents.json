@@ -1,0 +1,33 @@
+{
+  "images" : [
+    {
+      "filename" : "gridForests.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "gridForests@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "gridForests@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    },
+    {
+      "filename" : "gridForests@2x-1.png",
+      "idiom" : "car",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "gridForests@3x-1.png",
+      "idiom" : "car",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
