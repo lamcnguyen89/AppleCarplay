@@ -30,6 +30,7 @@
 		DEEB9AF927936A0000A4445E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB9AF827936A0000A4445E /* AppDelegate.swift */; };
 		DEEB9AFB27936A7900A4445E /* CarPlaySceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB9AFA27936A7900A4445E /* CarPlaySceneDelegate.swift */; };
 		DEEB9AFD27936D2D00A4445E /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB9AFC27936D2D00A4445E /* TestView.swift */; };
+		DEEB9B0227939B6600A4445E /* CarPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEB9B0127939B6600A4445E /* CarPlay.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		DEEB9AF827936A0000A4445E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEEB9AFA27936A7900A4445E /* CarPlaySceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlaySceneDelegate.swift; sourceTree = "<group>"; };
 		DEEB9AFC27936D2D00A4445E /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		DEEB9B0127939B6600A4445E /* CarPlay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CarPlay.framework; path = System/Library/Frameworks/CarPlay.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEEB9B0227939B6600A4445E /* CarPlay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 			children = (
 				D3500EE424D2007D002922AB /* AppleCarplay */,
 				D3500EE324D2007D002922AB /* Products */,
+				DEEB9B0027939B6600A4445E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +146,14 @@
 				DEEB9AFC27936D2D00A4445E /* TestView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		DEEB9B0027939B6600A4445E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEEB9B0127939B6600A4445E /* CarPlay.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
