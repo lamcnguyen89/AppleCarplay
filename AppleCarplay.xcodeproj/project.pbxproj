@@ -127,8 +127,8 @@
 				D3E10F7624D36559008CE7C5 /* Place.swift */,
 				D320786824D4B5620017857E /* MapDirectory.swift */,
 				DE342D0427901256003DBB52 /* LocationQuery.swift */,
-				DE342D08279083E4003DBB52 /* SnapShotter.swift */,
 				DE342D0A279098A2003DBB52 /* LocationManager.swift */,
+				DE342D08279083E4003DBB52 /* SnapShotter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
