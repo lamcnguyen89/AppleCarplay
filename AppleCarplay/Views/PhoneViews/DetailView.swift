@@ -13,8 +13,11 @@ struct DetailView: View {
             ScrollView {
                 Text(location.details)
                     .font(.body)
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
                 Image(uiImage: snapshotter.isOnDevice ? snapshotter.mapSnapShot! : snapshotter.defaultMap)
                     .resizable()
+                    .cornerRadius(15)
                     .padding(.bottom)
             }
             .padding(.top)

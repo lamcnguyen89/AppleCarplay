@@ -8,14 +8,14 @@ struct LocationPhoto: View {
   var body: some View {
     Image(photoName)
       .resizable()
+      .cornerRadius(10)
       .aspectRatio(contentMode: .fit)
       .frame(maxHeight: 200)
-      .padding(10)
-      .background(Color.white)
-      .border(Color.black, width: 2)
-      .shadow(radius: 30)
+      .padding(5)
+     // .background(Color.white)
+     // .border(Color.black, width: 2)
       .padding(.top)
-      .rotationEffect(.degrees(.random(in: -5 ... 5)), anchor: .center)
+    //  .rotationEffect(.degrees(.random(in: -5 ... 5)), anchor: .center)
   }
 }
 

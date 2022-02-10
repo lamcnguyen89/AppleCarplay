@@ -10,7 +10,7 @@ struct RoadView: View {
       Image("road")
       .resizable()
       .aspectRatio(contentMode: .fill)
-      .opacity(0.3)
+      .opacity(1.0)
     }
     .edgesIgnoringSafeArea(.all)
   }

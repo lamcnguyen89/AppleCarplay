@@ -119,6 +119,7 @@ private struct OtherPlacesScrollView: View {
           let place = places[index]
           Image(place.image)
             .resizable()
+            .cornerRadius(10)
             .frame(width: 100, height: 100, alignment: .center)
             .aspectRatio(1, contentMode: .fill)
             .onTapGesture {
