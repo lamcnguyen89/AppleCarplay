@@ -25,6 +25,8 @@
 		DE3D6455278F728C0078111A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D6454278F728C0078111A /* MapView.swift */; };
 		DE3D6457278F79D60078111A /* places.json in Resources */ = {isa = PBXBuildFile; fileRef = DE3D6456278F79D60078111A /* places.json */; };
 		DE6972C527B5EC16008209C2 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = DE6972C427B5EC16008209C2 /* Readme.md */; };
+		DE6972C927B6CBD7008209C2 /* Carplay_Entitlements_List.png in Resources */ = {isa = PBXBuildFile; fileRef = DE6972C827B6CBD7008209C2 /* Carplay_Entitlements_List.png */; };
+		DE6972CB27B6CC3D008209C2 /* Entitlements_Entry.png in Resources */ = {isa = PBXBuildFile; fileRef = DE6972CA27B6CC3D008209C2 /* Entitlements_Entry.png */; };
 		DEEB9AF5279364B900A4445E /* AppleCarplayTesting.Entitlements in Resources */ = {isa = PBXBuildFile; fileRef = DEEB9AF4279364B800A4445E /* AppleCarplayTesting.Entitlements */; };
 		DEEB9AF72793683100A4445E /* PhoneSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB9AF62793683100A4445E /* PhoneSceneDelegate.swift */; };
 		DEEB9AF927936A0000A4445E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB9AF827936A0000A4445E /* AppDelegate.swift */; };
@@ -59,6 +61,8 @@
 		DE3D6454278F728C0078111A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		DE3D6456278F79D60078111A /* places.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = places.json; path = "AppleCarplay/Preview Content/places.json"; sourceTree = SOURCE_ROOT; };
 		DE6972C427B5EC16008209C2 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		DE6972C827B6CBD7008209C2 /* Carplay_Entitlements_List.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Carplay_Entitlements_List.png; sourceTree = "<group>"; };
+		DE6972CA27B6CC3D008209C2 /* Entitlements_Entry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Entitlements_Entry.png; sourceTree = "<group>"; };
 		DEEB9AF4279364B800A4445E /* AppleCarplayTesting.Entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppleCarplayTesting.Entitlements; sourceTree = "<group>"; };
 		DEEB9AF62793683100A4445E /* PhoneSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneSceneDelegate.swift; sourceTree = "<group>"; };
 		DEEB9AF827936A0000A4445E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +90,7 @@
 		D3500ED924D2007D002922AB = {
 			isa = PBXGroup;
 			children = (
+				DE6972C727B6CB6F008209C2 /* ReadmeScreenshots */,
 				DE6972C427B5EC16008209C2 /* Readme.md */,
 				D3500EE424D2007D002922AB /* AppleCarplay */,
 				D3500EE324D2007D002922AB /* Products */,
@@ -143,6 +148,15 @@
 				DEEB9B102794B4A300A4445E /* PhoneViews */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		DE6972C727B6CB6F008209C2 /* ReadmeScreenshots */ = {
+			isa = PBXGroup;
+			children = (
+				DE6972CA27B6CC3D008209C2 /* Entitlements_Entry.png */,
+				DE6972C827B6CBD7008209C2 /* Carplay_Entitlements_List.png */,
+			);
+			path = ReadmeScreenshots;
 			sourceTree = "<group>";
 		};
 		DEEB9B0027939B6600A4445E /* Frameworks */ = {
@@ -265,10 +279,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE6972C927B6CBD7008209C2 /* Carplay_Entitlements_List.png in Resources */,
 				DE6972C527B5EC16008209C2 /* Readme.md in Resources */,
 				DE3D6457278F79D60078111A /* places.json in Resources */,
 				D3500EED24D2007E002922AB /* Preview Assets.xcassets in Resources */,
 				D3500EEA24D2007E002922AB /* Assets.xcassets in Resources */,
+				DE6972CB27B6CC3D008209C2 /* Entitlements_Entry.png in Resources */,
 				DEEB9AF5279364B900A4445E /* AppleCarplayTesting.Entitlements in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
