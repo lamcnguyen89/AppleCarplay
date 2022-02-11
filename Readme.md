@@ -62,11 +62,33 @@ In summary each app is signed to a certain developer account. A user's apple dev
 
 The Scene and App Delegate basically specifies what the application will do when events such as application start, application disconnect, phone calls occur, and/or connecting an iPhone to a Carplay compatible vehicle occurs... Basically actions involving the iphone external to that of the UI of the App.
 
+In order to understand the architecture of a Carplay App, we will just use this current Carplay Application as an example:
 
-## Credit Goes To:
+1. The first file to look at is the AppDelegate file. It is located in "/AppleCarplay/App Lifecycle/AppDelegate.Swift". We are specifically looking at this function in the screenshot below:
 
-- [here](https://www.udemy.com/course/build-ecommerce-website-like-amazon-react-node-mongodb/)
-- 
+    ![AppDelegate](ReadmeScreenshots/AppDelegateScreen.png)
+
+2. The code in the above screenshot basically describes what will happen if you connect the application under certain conditions. 
+
+    If the device is not connected to a carplay device, only the Phone Version of the application will be loaded and it will show up on the phone by loading the "PhoneSceneDelegate Class"
+
+    If the device is connected to a carplay device, both the phone and carplay version will be loaded. The PhoneSceneDelegate and CarPlaySceneDelegate classes will be loaded.
+    
+3. The Second file to look at in terms of Carplay functionality is the CarPlaySceneDelegate file. It is located in "/AppleCarplay/App Lifecycle/AppDelegate.Swift".
+
+
+
+
+
+
+## Resources:
+
+- [Enhance Existing Apps with Carplay](https://adapptor.com.au/blog/enhance-existing-apps-with-carplay)
+- [Scene and App Delegate Setup] (https://developer.apple.com/documentation/carplay/integrating_carplay_with_your_navigation_app)
+- [Carplay Programming Guide](https://developer.apple.com/carplay/documentation/CarPlay-App-Programming-Guide.pdf)
+
+
+ 
 ## Prerequisites and Deployment
 
 - Mac computer to develop for iOS
