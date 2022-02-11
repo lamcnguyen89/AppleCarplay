@@ -24,6 +24,7 @@
 		DE342D0D2790AEBB003DBB52 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE342D0C2790AEBB003DBB52 /* LocationView.swift */; };
 		DE3D6455278F728C0078111A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D6454278F728C0078111A /* MapView.swift */; };
 		DE3D6457278F79D60078111A /* places.json in Resources */ = {isa = PBXBuildFile; fileRef = DE3D6456278F79D60078111A /* places.json */; };
+		DE6972C527B5EC16008209C2 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = DE6972C427B5EC16008209C2 /* Readme.md */; };
 		DEEB9AF5279364B900A4445E /* AppleCarplayTesting.Entitlements in Resources */ = {isa = PBXBuildFile; fileRef = DEEB9AF4279364B800A4445E /* AppleCarplayTesting.Entitlements */; };
 		DEEB9AF72793683100A4445E /* PhoneSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB9AF62793683100A4445E /* PhoneSceneDelegate.swift */; };
 		DEEB9AF927936A0000A4445E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB9AF827936A0000A4445E /* AppDelegate.swift */; };
@@ -57,6 +58,7 @@
 		DE342D0E2790FA28003DBB52 /* BasketLoop.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BasketLoop.gpx; sourceTree = "<group>"; };
 		DE3D6454278F728C0078111A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		DE3D6456278F79D60078111A /* places.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = places.json; path = "AppleCarplay/Preview Content/places.json"; sourceTree = SOURCE_ROOT; };
+		DE6972C427B5EC16008209C2 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		DEEB9AF4279364B800A4445E /* AppleCarplayTesting.Entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppleCarplayTesting.Entitlements; sourceTree = "<group>"; };
 		DEEB9AF62793683100A4445E /* PhoneSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneSceneDelegate.swift; sourceTree = "<group>"; };
 		DEEB9AF827936A0000A4445E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 		D3500ED924D2007D002922AB = {
 			isa = PBXGroup;
 			children = (
+				DE6972C427B5EC16008209C2 /* Readme.md */,
 				D3500EE424D2007D002922AB /* AppleCarplay */,
 				D3500EE324D2007D002922AB /* Products */,
 				DEEB9B0027939B6600A4445E /* Frameworks */,
@@ -262,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE6972C527B5EC16008209C2 /* Readme.md in Resources */,
 				DE3D6457278F79D60078111A /* places.json in Resources */,
 				D3500EED24D2007E002922AB /* Preview Assets.xcassets in Resources */,
 				D3500EEA24D2007E002922AB /* Assets.xcassets in Resources */,
