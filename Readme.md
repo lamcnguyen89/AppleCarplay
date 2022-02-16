@@ -74,12 +74,41 @@ In order to understand the architecture of a Carplay App, we will just use this 
 
     If the device is connected to a carplay device, both the phone and carplay version will be loaded. The PhoneSceneDelegate and CarPlaySceneDelegate classes will be loaded.
     
-3. The Second file to look at in terms of Carplay functionality is the CarPlaySceneDelegate file. It is located in "/AppleCarplay/App Lifecycle/AppDelegate.Swift".
+3. The Second file to look at in terms of Carplay functionality is the CarPlaySceneDelegate file. It is located in "/AppleCarplay/App Lifecycle/CarPlaySceneDelegate.Swift".
+
+4. The CarPlaySceneDelegate file contains various functions that load predesigned templates created by Apple to do different things. There is a different tamplate  for Audio, Coomunication, EV Charging, Navigation, Parking and Quick Food Ordering
+
+    The reason Apple creates a restrictive set of Templates that a developer has to work within is of Apple's strict Human interface Guidelines for a Carplay Application. Apps displayed on a vehicles touchscreen should not be too cluttered, distracting and complex that it can divert a driver's attention from the road. Obviously too much distraction from the road can cause a car accident and possible fatalities which is one of the reasons why Apple is so strict.
+    
+    Apple's Designers have designed a set of Templates to both reduce chances of road accidents due to distracting app design and to also fit in with Apple's Design aesthetic.
+    
+    5. The CarPlaySceneDelegate file loads predefined Templates that Apple has created. The actual configuration of the Templates are defined in the TemplateManager files in the Controllers folder.  
 
 
+    6. The last file to look at is the TemplateManager.swift file. This file actually configures the Template once the CarPlaySceneDelegate file loads and sets up the Template.  This file is located in "/AppleCarplay/Controllers/TemplateManager.Swift"
+    
+    7. The Template Manger actually builds the UI that will be displayed on the car's touchscreen display. 
+    
+    8. The TemplateManager file also loads views and puts them together.
+    
+## Working with CarPlay Templates
 
+As discussed before, CarPlay Templates are premade modules created by Apple to build apps that involve either one of the following:
 
+    1. Audio
+    2. Communication
+    3. EV Charging
+    4. Navigation
+    5. Parkingg
+    6. Quick Food Ordering
+    
+In order to understand how to use the templates in more detail, read the [Carplay Programming Guide](https://developer.apple.com/carplay/documentation/CarPlay-App-Programming-Guide.pdf)
 
+## In Summary
+
+The Architecture of the Carplay Application goes in this direction from the highest to lowest level:
+
+AppDelegate -> CarplaySceneDelegate -> TemplateManager -> Views
 
 ## Resources:
 
