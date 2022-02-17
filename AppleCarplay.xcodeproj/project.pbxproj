@@ -30,6 +30,7 @@
 		DE6972CD27B6D094008209C2 /* Code_Signing.png in Resources */ = {isa = PBXBuildFile; fileRef = DE6972CC27B6D094008209C2 /* Code_Signing.png */; };
 		DE6972CF27B6DD18008209C2 /* CarPlay-App-Programming-Guide.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DE6972CE27B6DD18008209C2 /* CarPlay-App-Programming-Guide.pdf */; };
 		DE6972D127B6EEA3008209C2 /* AppDelegateScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = DE6972D027B6EEA3008209C2 /* AppDelegateScreen.png */; };
+		DECEDACC27BDD89800A01DE9 /* AppScreenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = DECEDACB27BDD89800A01DE9 /* AppScreenshot.png */; };
 		DEEB9AF5279364B900A4445E /* AppleCarplayTesting.Entitlements in Resources */ = {isa = PBXBuildFile; fileRef = DEEB9AF4279364B800A4445E /* AppleCarplayTesting.Entitlements */; };
 		DEEB9AF72793683100A4445E /* PhoneSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB9AF62793683100A4445E /* PhoneSceneDelegate.swift */; };
 		DEEB9AF927936A0000A4445E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB9AF827936A0000A4445E /* AppDelegate.swift */; };
@@ -69,6 +70,7 @@
 		DE6972CC27B6D094008209C2 /* Code_Signing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Code_Signing.png; sourceTree = "<group>"; };
 		DE6972CE27B6DD18008209C2 /* CarPlay-App-Programming-Guide.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "CarPlay-App-Programming-Guide.pdf"; sourceTree = "<group>"; };
 		DE6972D027B6EEA3008209C2 /* AppDelegateScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppDelegateScreen.png; sourceTree = "<group>"; };
+		DECEDACB27BDD89800A01DE9 /* AppScreenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppScreenshot.png; sourceTree = "<group>"; };
 		DEEB9AF4279364B800A4445E /* AppleCarplayTesting.Entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppleCarplayTesting.Entitlements; sourceTree = "<group>"; };
 		DEEB9AF62793683100A4445E /* PhoneSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneSceneDelegate.swift; sourceTree = "<group>"; };
 		DEEB9AF827936A0000A4445E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				DE6972CC27B6D094008209C2 /* Code_Signing.png */,
 				DE6972CE27B6DD18008209C2 /* CarPlay-App-Programming-Guide.pdf */,
 				DE6972D027B6EEA3008209C2 /* AppDelegateScreen.png */,
+				DECEDACB27BDD89800A01DE9 /* AppScreenshot.png */,
 			);
 			path = ReadmeScreenshots;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 			files = (
 				DE6972D127B6EEA3008209C2 /* AppDelegateScreen.png in Resources */,
 				DE6972C927B6CBD7008209C2 /* Carplay_Entitlements_List.png in Resources */,
+				DECEDACC27BDD89800A01DE9 /* AppScreenshot.png in Resources */,
 				DE6972C527B5EC16008209C2 /* Readme.md in Resources */,
 				DE3D6457278F79D60078111A /* places.json in Resources */,
 				D3500EED24D2007E002922AB /* Preview Assets.xcassets in Resources */,
