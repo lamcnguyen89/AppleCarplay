@@ -4,6 +4,8 @@
 
 This application is an example of how to implement Carplay Functionality to a pre-existing iOS application. In order to add Carplay Functionality to an application, you will be working in the Scene Delegate and App Delegate portion of your code.
 
+<br />
+<br />
 
 ## Adding the Carplay Architecture to Your Preexisting App
 
@@ -17,6 +19,8 @@ Adding Carplay Functionality involves three overall processes:
 
 The specifics of these two steps will be discussed below.
 
+<br />
+<br />
 
 ## Adding Entitlements to your App
 
@@ -30,20 +34,31 @@ You first have to add an entitlement file to allow for the application to have p
 
 4. Within the Entitlements file, you will want to add a specific carplay capability in the format of the screenshot below:
 
+<br />
+
 ![EntitlementsExample](ReadmeScreenshots/Entitlements_Entry.png)
+
+<br />
 
 5. Depending on what carplay capabilities you want to use, add a specific capability based on the screenshot below of the list of capabilities:
 
+<br />
 ![EntitlementsExample](ReadmeScreenshots/Carplay_Entitlements_List.png)
+<br />
 
 6. Open the project's Build Settings and ensure your Code Signing Entitlements points to your created Entitlements file like the screenshot below:
 
+<br />
 ![EntitlementsExample](ReadmeScreenshots/Code_Signing.png)
+
+<br />
 
 Ensure that the file location is entered correctly based on the root of the project.
 
+<br />
+<br />
 
-## Requesting Carplay Entitlements from Apple (Optional for Development Purposes)
+## Requesting Carplay Entitlements from Apple
 
 So you are able to test the Carplay Functionality and Capabilities of your application in the Simulator by going into the I/O options for the simulator and choosing the Carplay Option to test. However in order to test your application on a device, on an actual vehicle and to deploy the app to the app store... You will need to go to Request Entitlements from Apple.
 
@@ -55,7 +70,8 @@ So you are able to test the Carplay Functionality and Capabilities of your appli
 
 
 In summary each app is signed to a certain developer account. A user's apple device or vehicle with Carplay capabilities will check the developer account that the app is signed to to see what this developer account is allowed to do. If the app passes the security and capabilities check, the App can run. By default, a developer account doesn't have Carplay capabilities possibly for security and quality control purposes. So you have to ask Apple to add Carplay Capabilities to your developer account in order for your carplay app to run in a vehicle.
-
+<br />
+<br />
   
 
 ## Working with Scene and App Delegate
@@ -66,7 +82,10 @@ In order to understand the architecture of a Carplay App, we will just use this 
 
 1. The first file to look at is the AppDelegate file. It is located in "/AppleCarplay/App Lifecycle/AppDelegate.Swift". We are specifically looking at this function in the screenshot below:
 
+
     ![AppDelegate](ReadmeScreenshots/AppDelegateScreen.png)
+
+
 
 2. The code in the above screenshot basically describes what will happen if you connect the application under certain conditions. 
 
@@ -90,7 +109,10 @@ In order to understand the architecture of a Carplay App, we will just use this 
     7. The Template Manger actually builds the UI that will be displayed on the car's touchscreen display. 
     
     8. The TemplateManager file also loads views and puts them together.
-    
+
+<br />
+<br />
+
 ## Working with CarPlay Templates
 
 As discussed before, CarPlay Templates are premade modules created by Apple to build apps that involve either one of the following:
@@ -99,24 +121,33 @@ As discussed before, CarPlay Templates are premade modules created by Apple to b
     2. Communication
     3. EV Charging
     4. Navigation
-    5. Parkingg
+    5. Parking
     6. Quick Food Ordering
     
 In order to understand how to use the templates in more detail, read the [Carplay Programming Guide](https://developer.apple.com/carplay/documentation/CarPlay-App-Programming-Guide.pdf)
+
+<br />
+<br />
 
 ## In Summary
 
 The Architecture of the Carplay Application goes in this direction from the highest to lowest level:
 
+```
 AppDelegate -> CarplaySceneDelegate -> TemplateManager -> Views
+```
+
+<br />
+<br />
 
 ## Resources:
 
 - [Enhance Existing Apps with Carplay](https://adapptor.com.au/blog/enhance-existing-apps-with-carplay)
-- [Scene and App Delegate Setup] (https://developer.apple.com/documentation/carplay/integrating_carplay_with_your_navigation_app)
+- [Scene and App Delegate Setup](https://developer.apple.com/documentation/carplay/integrating_carplay_with_your_navigation_app)
 - [Carplay Programming Guide](https://developer.apple.com/carplay/documentation/CarPlay-App-Programming-Guide.pdf)
 
-
+<br />
+<br />
  
 ## Prerequisites and Deployment
 
@@ -124,15 +155,23 @@ AppDelegate -> CarplaySceneDelegate -> TemplateManager -> Views
 - XCode 11.0 or later
 - For testing on a device, use a device that can run the following OS versions: iOS 13.0+, iPadOS 13.0+, macOS 10.15+, Mac Catalyst 13.0+, tvOS 13.0+, watchOS 6.0+
 
+<br />
+<br />
+
 ## Built With
 
 - Xcode
 - SwiftUI
 
+<br />
+<br />
 
 ## Author
 
 **Lam Nguyen**
+
+<br />
+<br />
 
 ## License
 
