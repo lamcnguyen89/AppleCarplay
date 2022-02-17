@@ -5,7 +5,8 @@
 This application is an example of how to implement Carplay Functionality to a pre-existing iOS application. In order to add Carplay Functionality to an application, you will be working in the Scene Delegate and App Delegate portion of your code.
 
 <br />
-![EntitlementsExample](ReadmeScreenshots/AppScreenshot.png)
+
+![App Screenshot](ReadmeScreenshots/AppScreenshot.png)
 
 <br />
 <br />
